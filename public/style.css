@@ -3,12 +3,63 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   background-color: #c1b5ad;
 }
 
 #map {
+  display: flex;
   height: 100vh;
   width: 100vw;
+}
+
+#sidebar {
+  position: right;
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  background-color: rgba(255, 255, 255, 0);
+  height: 100vh;
+  align-items: stretch;
+}
+
+#option {
+  background-color: tan;
+  height: 45%;
+  /* margin-bottom: 50px; */
+}
+
+#itinerary {
+  background-color: mediumseagreen;
+  height: 100%;
+}
+
+.side {
+}
+
+header {
+  display: flex;
+  z-index: -1;
+}
+
+nav {
+  z-index: -1;
+  height: 10vh;
+  width: 100vw;
+  background-color: orange;
+}
+
+main {
+  display: flex;
+}
+
+#it-label {
+  display: flex;
+  background-color: goldenrod;
+  align-items: center;
+  height: 60px;
 }
